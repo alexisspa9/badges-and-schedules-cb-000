@@ -14,9 +14,7 @@ def assign_rooms()
 end
 
 def printer
-  array_one = batch_badge_creator()
   array_two = assign_rooms()
-  array_one.each{|print| puts print}
   array_two.each{|print| puts print}
 
 end
