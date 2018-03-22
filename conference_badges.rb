@@ -4,15 +4,17 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(array)
-  array.map do |name|
-    "Hello, my name is #{name}."
-  end
+  array_messages =[]
+  array.each{|name| array_messages.push(badge_maker(name))}
+  array_messages
 end
 
 def assign_rooms(attendees)
-  attendees.each_with_index.map do |attendee, index|
-     "Hello, #{attendee}! You'll be assigned to room #{index+1}!"
+  array = []
+  attendees.each_with_index do |name, index|
+    array.push("Hello, #{name}! You'll be assigned to room #{index+1}!")
   end
+  array
 end
 
 def printer
