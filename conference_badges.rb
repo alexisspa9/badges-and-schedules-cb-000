@@ -9,12 +9,13 @@ def batch_badge_creator(array)
   array_messages
 end
 
-def assign_rooms()
-
+def assign_rooms(array)
+  array.each_with_index do |name|
+    "Hello"
+  end
 end
 
 def printer
-  array_two = assign_rooms()
-  array_two.each{|print| puts print}
+
 
 end
