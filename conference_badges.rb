@@ -14,6 +14,6 @@ def assign_rooms()
 end
 
 def printer
-  batch_badge_creator()
-  assign_rooms()
+  array_one = batch_badge_creator()
+  array_twoassign_rooms()
 end
