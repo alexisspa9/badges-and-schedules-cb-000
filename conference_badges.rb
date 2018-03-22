@@ -10,11 +10,10 @@ def batch_badge_creator(array)
 end
 
 def assign_rooms()
-  
+
 end
 
 def printer
   batch_badge_creator()
   assign_rooms()
-  
 end
